@@ -6,19 +6,15 @@ public class KiteTest {
 		
 		Kite kite1 = new Kite("Salil","Green",50);
 		kite1.showKite();
-		Kite.showKiteCount();
 		
 		Kite kite2 = new Kite("Sujal","Blue",60);
 		kite2.showKite();
-		Kite.showKiteCount();
 		
 		Kite kite3 = new Kite("Roshan","Yellow",70);
 		kite2.showKite();
-		Kite.showKiteCount();
 		
 		Kite kite4 = new Kite("Shruti","Black",30);
 		kite2.showKite();
-		Kite.showKiteCount();
 		
 		Kite kite5 = new Kite("Mitali","Green",45);
 		kite2.showKite();
@@ -40,6 +36,7 @@ class Kite{
 
 	public Kite(String owner, String color, int length) {
 		super();
+		System.out.println("Kite is created...");
 		this.owner = owner;
 		this.color = color;
 		this.length = length;
@@ -50,7 +47,8 @@ class Kite{
 		System.out.println("Kite Owner : "+owner);
 		System.out.println("Kite Color : "+color);
 		System.out.println("Kite Length : "+length);
-		System.out.println("Kite Owner : "+owner);
+		System.out.println("Kite Count : "+Kite.kiteCount);
+		System.out.println("---------------");
 		
 	}
 
